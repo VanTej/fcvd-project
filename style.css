@@ -48,3 +48,17 @@ nav ul li a {
 .imgBox{
     
 }
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer h2 {
+}
