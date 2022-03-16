@@ -30,4 +30,20 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 1rem;
+.resumeTitle{
+    text-align: center;
+}
+
+.resumeBoxes{
+    display: flex;
+    justify-content: space-around;
+}
+.boxResume{
+    border: 1px solid black;
+    width: 50rem;
+    height: 40rem;
+}
+
+.imgBox{
+    
 }
