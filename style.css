@@ -34,6 +34,13 @@ nav ul li a {
     padding: 1rem;
 }
 
+header img{
+    width: 100%;
+}
+nav ul li a:hover {
+    cursor: url(/img/sunny2.png) 8 12 ,pointer;
+}
+
 header {
     text-align: center;
 }
