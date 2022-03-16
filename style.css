@@ -33,6 +33,10 @@ nav ul li a:hover {
     cursor: url(/img/sunny2.png) 8 12 ,pointer;
 }
 
+header {
+    text-align: center;
+}
+
 .resumeTitle{
     text-align: center;
 }
@@ -45,6 +49,18 @@ nav ul li a:hover {
     border: 1px solid black;
     width: 50rem;
     height: 40rem;
+}
+
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .imgBox{
