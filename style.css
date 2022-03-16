@@ -1,0 +1,24 @@
+.boxRecommandations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxPersonnages{
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid black;
+}
+
+.imgPerso {
+    height: 200px;
+    width: 200px;
+}
+
+.recommandations p {
+    color: brown;
+    overflow: hidden;
+    max-width: 15ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
