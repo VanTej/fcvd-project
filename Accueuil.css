@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    justify-content: space-around;
+    background-color: gray;
+
+}
+nav img {
+    display: flex;
+    justify-content: start;
+    width: 5rem;
+    
+}
+nav ul {
+    display:flex;
+    list-style: none;
+    margin-inline-end: 12rem;
+    
+}
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
