@@ -2,13 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-header {
-    text-align: center;
-}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: start;
     justify-content: space-around;
     background-color: gray;
 
@@ -31,6 +28,7 @@ nav ul li a {
     color: white;
     padding: 1rem;
 }
+
 .resumeTitle{
     text-align: center;
 }
@@ -57,3 +55,7 @@ nav ul li a {
 
 }
 
+.imgBox{
+    
+
+}
