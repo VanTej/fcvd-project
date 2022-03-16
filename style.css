@@ -28,9 +28,7 @@ nav ul li a {
     color: white;
     padding: 1rem;
 }
-header {
-    display: grid;
-}
+
 header img{
     width: 100%;
 
