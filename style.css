@@ -29,6 +29,10 @@ nav ul li a {
     padding: 1rem;
 }
 
+nav ul li a:hover {
+    cursor: url(/img/sunny2.png) 8 12 ,pointer;
+}
+
 .resumeTitle{
     text-align: center;
 }
