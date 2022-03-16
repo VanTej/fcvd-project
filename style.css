@@ -29,6 +29,10 @@ nav ul li a {
     padding: 1rem;
 }
 
+header {
+    text-align: center;
+}
+
 .resumeTitle{
     text-align: center;
 }
