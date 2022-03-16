@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'onePieceFont';
+    src: url(Avis_recherche/animeace2_reg.ttf) format("truetype");
+  
+   }
+   * {
+     font-family: 'onePieceFont';
+   }
