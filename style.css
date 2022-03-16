@@ -1,32 +1,30 @@
+@import 'variables.css';
+@import 'experience.css';
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
 
-body{
-    b
-}
-
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: gray;
+}
 
-}
 nav img {
-    display: flex;
-    justify-content: start;
     width: 5rem;
-    
+    margin-inline-start: 1rem;
 }
+
 nav ul {
     display:flex;
     list-style: none;
-    margin-inline-end: 12rem;
-    
+    margin-inline: 2rem;
 }
+
 nav ul li a {
     display: inline-block;
     text-decoration: none;
@@ -43,6 +41,10 @@ nav ul li a:hover {
 
 header {
     text-align: center;
+}
+
+.burger {
+    display: none;
 }
 
 .resumeTitle{
@@ -74,4 +76,31 @@ header {
 .imgBox{
     
 
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: initial;
+        fill:antiquewhite;
+        margin-inline-end: 1rem;
+    }
+
+    .nav-links:target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 2rem;
+        top: 0;
+        width: 70%;
+        height: 80%;
+        background-color: #000000;
+        opacity: 0.85;
+    }
 }
