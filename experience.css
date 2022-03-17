@@ -16,9 +16,9 @@
 
 .line {
     height: 1000px;
-    width: 6px;
+    width: 10px;
     margin: 0 auto;
-    background: var(--dark);
+    background: url('/img/corde.png') center;
 }
 
 .image-luffy {
@@ -41,8 +41,14 @@
 }
 
 .y21 {
-    top : 450px;
+    top : 400px;
     background: url(/img/luffy-21y.jpg) center;
+    background-size: 100%;
+}
+
+.wano {
+    top : 790px;
+    background: url(/img/luffy-wano.jpg) center;
     background-size: 100%;
 }
 
@@ -68,27 +74,39 @@
 
 .b1 {
     top: 60px;
-    
 }
-
 .b2 {
-    top: 270px;
+    top: 200px;
 }
 .b3 {
-    top: 600px;
+    top: 450px;
 }
 .b4 {
-    top: 810px;
+    top: 590px;
+}
+.b5 {
+    top: 840px;
 }
 
 .left-point {
 	width: 0;
 	height: 0;
-	border-left: 2vh solid transparent;
-	border-right: 2vh solid transparent;
-	border-top: 10vh solid var(--light);
+	border-left: 5vh solid transparent;
+	border-right: 4vh solid transparent;
+	border-top: 6vh solid var(--light);
 	position: absolute;
-	top: 45%;
-	left: -10%;
-	transform: rotate(60deg);
+	top: 5%;
+	right: -5%;
+	transform: rotate(120deg);
+}
+.right-point {
+	width: 0;
+	height: 0;
+	border-left: 4vh solid transparent;
+	border-right: 5vh solid transparent;
+	border-top: 6vh solid var(--light);
+	position: absolute;
+	top: 5%;
+	left: -5%;
+	transform: rotate(10deg);
 }
