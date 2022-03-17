@@ -18,6 +18,7 @@
 }
 
 #myVideo {
+    z-index: -5;
     position: fixed;
     right: 0;
     bottom: 0;
