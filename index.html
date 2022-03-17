@@ -1,34 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey D Luffy CV</title>
     <link rel="stylesheet" href="style.css">
+    
+
 </head>
 <body>
-
+    <video autoplay muted loop id="myVideo">
+        <source src="img/sunny_background.mp4" type="video/mp4">
+      </video>    
 
     <nav>
-
+        <a href="#Accueil"><img src="img/logoLuffy.png"  alt="Luffy Logo"/> </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#Experience">Expérience</a></li>
+            <li><a href="#Resume">Résumé</a></li>
+            <li><a href="#Recommandations">Recommandations</a></li>
+            <li><a href="#Contactus">Contact us</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <a href="#nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </a>
+        </div>
+        
     </nav>
 
     <header>
-
+        <img src="img/image_accueil_luffy.png" alt="">
+        <h1>CV Monkey D. Luffy</h1>
+        <h2>Le roi des pirates ce sera moi !</h2>
     </header>
 
     <main>
-        <p>test</p>
+
+        <section class="xp" id="Experience">
+            <h2>TOUT CE QUE J'AI ACCOMPLI POUR DEVENIR ROI DES PIRATES</h2>
+            <div class="timeline">
+                <div class="line"></div>
+                <div class="image-luffy y17"></div>
+                <div class="timeline-box left b1">
+                    <div class="left-point"></div>
+                    <h3>Date - Lieu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                </div>
+                <div class="timeline-box right b2">
+                    <div class="right-point"></div>
+                    <h3>Date - Lieu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                </div>
+                <div class="image-luffy y21"></div>
+                <div class="timeline-box left b3">
+                    <div class="left-point"></div>  
+                    <h3>Date - Lieu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                </div>
+                <div class="timeline-box right b4">
+                    <div class="right-point"></div>
+                    <h3>Date - Lieu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                </div>
+                <div class="image-luffy wano"></div>
+                <div class="timeline-box left b5">
+                    <div class="left-point"></div>
+                    <h3>Date - Lieu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                </div>
+            </div>
+            </div>
+
         <section class="xp">
+
 
         </section>
 
-        <section class="resume">
+        <section class="resume" id="Resume">
+            <h2 class = resumeTitle> Resume de mes compétences </h2>
+
+            <div class = "resumeBoxes" > 
+                <img src="Avis_recherche/Luffy_lucy_preview_rev_1.png"> 
+            </div>
+            <div class="combatcompetence">
+                <h2> compétences de combat</h2>
+                    <p>Force</p>
+                    <p>Vitesse</p>
+                    <p>Enduranc</p>
+                    <p>Chance</p>
+
+            </div>
+            <div class="caracteristique">
+                <h2> Caractéristiques </h2>
+                  <p>Sympatie</p>
+                  <p>Furie</p>
+                  <p>Apétit</p>
+                  <p>Sommeil</p>
+
+            </div>
         
         </section>
 
-        <section class="recommandations">
+        <section class="recommandations" id="Recommandations">
 
 
         </section>
@@ -36,7 +114,16 @@
     </main>
 
     <footer>
+        <div class = "footerContainer">
 
+            <h2 class ="footer contact" id="Contactus">Contact Us :</h2>
+            <p><a href ="">exemple reseau</a></p>
+            <p><a href ="">exemple reseau</a></p>
+            <p><a href ="">exemple reseau</a></p>
+            <p><a href ="">exemple reseau</a></p>
+
+
+        </div>
     </footer>
     
 </body>
