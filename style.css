@@ -25,11 +25,11 @@ body{
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
     filter: contrast(120%);
     filter: opacity(120%);
     filter: brightness(40%);
-    filter: blur(3px);
+    filter: blur(0px);
   }
 
 
