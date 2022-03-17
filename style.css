@@ -1,10 +1,36 @@
 @import 'variables.css';
 @import 'experience.css';
 
+@font-face {
+    font-family: 'onePieceFont';
+    src: url(img/animeace2_reg.ttf) format("truetype");
+  
+   }
+*{
+     font-family: 'onePieceFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
+#myVideo {
+    z-index: -5;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /*opacity: 0.8;*/
+    filter: contrast(120%);
+    filter: opacity(120%);
+    filter: brightness(40%);
+    filter: blur(3px);
+  }
+
 
 
 nav {
