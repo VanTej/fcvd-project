@@ -5,8 +5,10 @@
 
 
 body{
-    b
+    background-image: url(img/backround_map.png);
 }
+
+
 
 nav {
     display: flex;
