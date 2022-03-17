@@ -11,7 +11,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: gray;
+    background-color: var(--primary);
 }
 
 nav img {
@@ -28,7 +28,7 @@ nav ul {
 nav ul li a {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: var(--light-primary);
     padding: 1rem;
 }
 
@@ -56,7 +56,7 @@ header {
     justify-content: space-around;
 }
 .boxResume{
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     width: 50rem;
     height: 40rem;
 }
@@ -65,7 +65,7 @@ header {
 .footerContainer{
     display: flex;
     justify-content: center;
-    border: 5px solid black;
+    border: 5px solid var(--dark);
     margin: 1rem;
     padding: 1rem;
     justify-content: space-between;
@@ -84,7 +84,7 @@ header {
 
     .burger {
         display: initial;
-        fill:antiquewhite;
+        fill:var(--light-primary);
         margin-inline-end: 1rem;
     }
 

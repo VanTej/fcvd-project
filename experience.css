@@ -1,8 +1,10 @@
+@import 'variables.css';
+
 .xp h2 {
     text-align: center;
     padding-block: 5vh;
     background-color: rgba(37, 37, 83, 0.541);
-    color: antiquewhite;
+    color: var(--light-primary);
 }
 
 .timeline {
@@ -16,7 +18,7 @@
     height: 1000px;
     width: 6px;
     margin: 0 auto;
-    background: rgb(63, 63, 63);
+    background: var(--dark);
 }
 
 .image-luffy {
@@ -26,7 +28,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: rgb(63, 63, 63);
+    background: var(--dark);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -46,6 +48,7 @@
     min-height: 150px;
     padding: 2rem;
     border-radius: 25%;
+    background-color: var(--light);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.616);
     position: absolute;
     left: 50%;
