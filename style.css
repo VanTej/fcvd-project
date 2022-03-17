@@ -74,20 +74,28 @@ header {
 }
 
 .resumeTitle{
+    grid-column: span 3;
+    grid-row: 1 / 2;
     text-align: center;
 }
-
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:50px 1fr;
+}
 .resumeBoxes{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-column: 2 / 3;
 }
-.boxResume{
-    border: 1px solid var(--dark);
-    width: 50rem;
-    height: 40rem;
+.combatcompetence {
+    display: grid;
+    grid-row: 2 / 3 ;
 }
-
-
+.caracteristique {
+    display: grid;
+    grid-column:3 / 4 ;
+    grid-row: 2 / 3;
+}
 .footerContainer{
     display: flex;
     justify-content: center;
