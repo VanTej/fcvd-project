@@ -6,7 +6,8 @@
     src: url(img/animeace2_reg.ttf) format("truetype");
   
    }
-*{
+
+body{
      font-family: 'onePieceFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -62,7 +63,7 @@ header img{
     width: 100%;
 }
 nav ul li a:hover {
-    cursor: url(/img/sunny2.png) 8 12 ,pointer;
+    cursor: url(img/sunny2.png) 8 12 ,pointer;
 }
 
 header {
@@ -98,10 +99,23 @@ header {
     align-items: center;
 
 }
+/*
+css pour les animations
 
 
+.reveal{
+    position: relative;
+    transform: translateX(600px);
+    opacity: 0;
+    transition: 1s all ease;
+}
 
-
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+    left: 29%;
+  }
+*/
 
 @media screen and (max-width: 600px) {
     .nav-links {
