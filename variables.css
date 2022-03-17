@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -43,3 +44,22 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+:root {
+	--primary:#18417E;
+	--light-primary:#D4DEFF;
+	--secondary:#F5BB24;
+	--light-secondary:#FAF1A1;
+	--dark:#020328;
+	--intermediate:#611515;
+
+	--title-font:'onePieceFont';
+	--title-size: 1.5rem;
+	--text-font: 'Caveat Brush', cursive;
+	--text-size: 1.3rem;
+
+	--spacing: 0.5rem;
+	--spacing2: calc(2 *(var(--spacing)));
+	--spacing3: calc(3 *(var(--spacing)));
+	--spacing4: calc(4 *(var(--spacing)));
+}
