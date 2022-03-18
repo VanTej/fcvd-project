@@ -89,3 +89,300 @@
     transform: scale(1.5);
     scale(1.5);
    }
+=======
+@import 'variables.css';
+
+@font-face {
+    font-family: 'onePieceFont';
+    src: url(img/animeace2_reg.ttf) format("truetype");
+  
+   }
+
+body{
+     font-family: 'onePieceFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#myVideo {
+    z-index: -5;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+    filter: contrast(120%);
+    filter: opacity(120%);
+    filter: brightness(40%);
+    filter: blur(0px);
+  }
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+nav img {
+    width: 5rem;
+    margin-inline-start: 1rem;
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    margin-inline: 2rem;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--light-primary);
+    padding: 1rem;
+}
+
+header img{
+    width: 100%;
+}
+nav ul li a:hover {
+    cursor: url(img/sunny2.png) 8 12 ,pointer;
+}
+
+header {
+    text-align: center;
+}
+
+.burger {
+    display: none;
+}
+
+.xp h2 {
+    text-align: center;
+    padding-block: 5vh;
+    background-color: rgba(37, 37, 83, 0.541);
+    color: var(--light-primary);
+}
+
+.timeline {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    padding-block: 2vh;
+}
+
+.line {
+    height: 1000px;
+    width: 10px;
+    margin: 0 auto;
+    background: url('/img/corde.png') center;
+}
+
+.image-luffy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--dark);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.y17 {
+    top : 10px;
+    background: url(/img/luffy-17y.jpeg) center;
+    background-size: 100%;
+}
+
+.y21 {
+    top : 400px;
+    background: url(/img/luffy-21y.jpg) center;
+    background-size: 100%;
+}
+
+.wano {
+    top : 790px;
+    background: url(/img/luffy-wano.jpg) center;
+    background-size: 100%;
+}
+
+.timeline-box {
+    max-width: 30%;
+    height: auto;
+    min-height: 150px;
+    padding: 2rem;
+    border-radius: 25%;
+    background-color: var(--light);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.616);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.left {
+    left: calc(50% - 220px);
+}
+.right {
+    left : calc(50% + 220px);
+}
+
+.b1 {
+    top: 60px;
+}
+.b2 {
+    top: 200px;
+}
+.b3 {
+    top: 450px;
+}
+.b4 {
+    top: 590px;
+}
+.b5 {
+    top: 840px;
+}
+
+.left-point {
+	width: 0;
+	height: 0;
+	border-left: 5vh solid transparent;
+	border-right: 4vh solid transparent;
+	border-top: 6vh solid var(--light);
+	position: absolute;
+	top: 5%;
+	right: -5%;
+	transform: rotate(120deg);
+}
+.right-point {
+	width: 0;
+	height: 0;
+	border-left: 4vh solid transparent;
+	border-right: 5vh solid transparent;
+	border-top: 6vh solid var(--light);
+	position: absolute;
+	top: 5%;
+	left: -5%;
+	transform: rotate(10deg);
+}
+
+.resumeTitle{
+    grid-column: span 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:50px 1fr;
+}
+.resumeBoxes{
+    display: grid;
+    grid-column: 2 / 3;
+}
+.combatcompetence {
+    display: grid;
+    grid-row: 2 / 3;
+}
+.caracteristique {
+    display: grid;
+    grid-column:3 / 4 ;
+    grid-row: 2 / 3;
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    border: 5px solid var(--dark);
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*
+css pour les animations
+
+
+.reveal{
+    position: relative;
+    transform: translateX(600px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+    left: 29%;
+  }
+*/
+
+@media screen and (max-width: 736px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: initial;
+        fill: var(--light-primary);
+        margin-inline-end: 1rem;
+    }
+
+    .nav-links:target {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 2rem;
+        top: 0;
+        width: 70%;
+        height: 80%;
+        background-color: #000000;
+        opacity: 0.85;
+    }
+
+    .line {
+        margin-inline-start: 15vw;
+    }
+
+    .image-luffy {
+        left: 15vw;
+    }
+
+    .timeline-box {
+        max-width: 60vw;
+        min-height: 50px;
+    }
+    .left {
+        left : 60vw;
+    }
+    .right{
+        left : 60vw;
+    }
+    .left-point {
+        width: 0;
+        height: 0;
+        border-left: 4vh solid transparent;
+        border-right: 5vh solid transparent;
+        border-top: 6vh solid var(--light);
+        position: absolute;
+        top: 5%;
+        left: -5%;
+        transform: rotate(10deg);
+    }
+    .right-point {
+        display: none;
+    }
+}
+
