@@ -210,13 +210,21 @@ header {
 .footerContainer{
     display: flex;
     justify-content: center;
-    border: 5px solid var(--dark);
-    margin: 1rem;
     padding: 1rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    background-color: var(--primary);
+    color: var(--light-primary);
+    height: 50vh;
 
 }
+footer a {
+    color: var(--light-primary);
+    text-decoration: none;
+
+}
+
+
 /*
 css pour les animations
 
