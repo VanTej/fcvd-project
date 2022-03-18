@@ -238,8 +238,12 @@ form{
     justify-content: space-between;
 }
 
-footer .phone{
-    z-index: 0;
+.phone{
+    background: url(img/escargophone-removebg-preview\(2\).png);
+    z-index: 5;
+    width: 100px;
+    height: 150px;
+
 }
 
 
