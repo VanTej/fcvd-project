@@ -211,8 +211,8 @@ header {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--primary);
     color: var(--light-primary);
     height: 50vh;
@@ -222,6 +222,24 @@ footer a {
     color: var(--light-primary);
     text-decoration: none;
 
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+footer .phone{
+    z-index: 0;
 }
 
 
