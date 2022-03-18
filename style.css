@@ -38,6 +38,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.93;
 }
 
 nav img {
@@ -48,7 +52,10 @@ nav img {
 nav ul {
     display:flex;
     list-style: none;
-    margin-inline: 2rem;
+    margin-inline: 1rem;
+}
+nav ul li {
+    font-size: clamp(10px, 1.6vw, 20px);
 }
 
 nav ul li a {
@@ -67,6 +74,32 @@ nav ul li a:hover {
 
 header {
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    background: url(img/image_accueil_luffy.resized.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--light-secondary);
+    font-weight: 900;
+}
+
+.title h1 {
+    font-size: clamp(40px, 3.5vw, 50px);
+    margin-block-start: 50vh;
+    padding: 1rem;
+}
+
+.title h2 {
+    font-size: clamp(30px, 2.5vw, 40px);
+    padding: 1rem;
 }
 
 .burger {
@@ -105,6 +138,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    border: 3px solid rgb(245, 187, 36, 0.6);
 }
 
 .y17 {
@@ -126,11 +160,11 @@ header {
 }
 
 .timeline-box {
-    max-width: 30%;
-    height: auto;
-    min-height: 150px;
+    max-width: 30vw;
+    min-width: 30vw;
+    height: clamp(150px 5vh 200px);
     padding: 2rem;
-    border-radius: 25%;
+    border-radius: 25%/50%;
     background-color: var(--light);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.616);
     position: absolute;
@@ -139,10 +173,10 @@ header {
 }
 
 .left {
-    left: calc(50% - 220px);
+    left: calc(50% - 25vw);
 }
 .right {
-    left : calc(50% + 220px);
+    left : calc(50% + 25vw);
 }
 
 .b1 {
@@ -164,9 +198,9 @@ header {
 .left-point {
 	width: 0;
 	height: 0;
-	border-left: 5vh solid transparent;
-	border-right: 4vh solid transparent;
-	border-top: 6vh solid var(--light);
+	border-left: 7vh solid transparent;
+	border-right: 5vh solid transparent;
+	border-top: 7vh solid var(--light);
 	position: absolute;
 	top: 5%;
 	right: -5%;
@@ -175,12 +209,12 @@ header {
 .right-point {
 	width: 0;
 	height: 0;
-	border-left: 4vh solid transparent;
+	border-left: 7vh solid transparent;
 	border-right: 5vh solid transparent;
-	border-top: 6vh solid var(--light);
+	border-top: 5vh solid var(--light);
 	position: absolute;
 	top: 5%;
-	left: -5%;
+	left: -7%;
 	transform: rotate(10deg);
 }
 
@@ -242,7 +276,6 @@ css pour les animations
 
     .burger {
         display: initial;
-        fill: var(--light-primary);
         margin-inline-end: 1rem;
     }
 
