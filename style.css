@@ -171,15 +171,15 @@ header {
     background-color: var(--light);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.616);
     position: absolute;
-    left: 50%;
+    /*left: 50%;*/
     transform: translate(-50%);
 }
 
 .left {
-    left: calc(50% - 25vw);
+    left: calc(33% - 25vw);
 }
 .right {
-    left : calc(50% + 25vw);
+    left : calc(33% + 25vw);
 }
 
 .b1 {
@@ -375,24 +375,6 @@ form{
 
 }
 
-
-/*
-css pour les animations
-
-
-.reveal{
-    position: relative;
-    transform: translateX(600px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active{
-    transform: translateX(0);
-    opacity: 1;
-    left: 29%;
-  }
-*/
 
 @media screen and (max-width: 736px) {
     .nav-links {
