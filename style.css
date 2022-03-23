@@ -254,19 +254,80 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50px 1fr;
+  background-color: var(--light-primary);
 }
 .resumeBoxes {
   display: grid;
   grid-column: 2 / 3;
 }
+#caroussel {
+  width: 400px;
+  overflow: auto;
+  border: 2px solid var(--dark);
+}
+.caroussel {
+  display: flex;
+  animation-duration: 20s;
+  animation-name: mesImages;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(-800px);
+  }
+  75% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .combatcompetence {
   display: grid;
   grid-row: 2 / 3;
+  justify-content: center;
 }
 .caracteristique {
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  justify-content: center;
+}
+.svg {
+  stroke-width: 1;
+  color: var(--secondary);
+  stroke: var(--intermediate);
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+}
+.svg {
+  animation: animate-svg 2s linear forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes animate-svg {
+  0% {
+    stroke-dasharray: 0;
+  }
+  40% {
+    stroke-dasharray: 60;
+  }
+  80% {
+    stroke-dasharray: 120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dasharray: 120;
+    fill: var(--secondary);
+  }
 }
 
 .recommandations {
@@ -349,7 +410,7 @@ form {
 }
 
 .phone {
-  background: url(img/escargophone-removebg-preview\(2\).png);
+  background: url("img/escargophone-removebg-preview(2).png");
   z-index: 5;
   width: 100px;
   height: 150px;
