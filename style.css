@@ -3,16 +3,16 @@
 @font-face {
     font-family: 'onePieceFont';
     src: url(img/animeace2_reg.ttf) format("truetype");
-  
-   }
 
-body{
-     font-family: 'onePieceFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    font-family: 'onePieceFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -29,7 +29,7 @@ body{
     filter: opacity(120%);
     filter: brightness(40%);
     filter: blur(0px);
-  }
+}
 
 
 
@@ -46,7 +46,7 @@ nav img {
 }
 
 nav ul {
-    display:flex;
+    display: flex;
     list-style: none;
     margin-inline: 2rem;
 }
@@ -58,11 +58,12 @@ nav ul li a {
     padding: 1rem;
 }
 
-header img{
+header img {
     width: 100%;
 }
+
 nav ul li a:hover {
-    cursor: url(img/sunny2.png) 8 12 ,pointer;
+    cursor: url(img/sunny2.png) 8 12, pointer;
 }
 
 header {
@@ -108,19 +109,19 @@ header {
 }
 
 .y17 {
-    top : 10px;
+    top: 10px;
     background: url(/img/luffy-17y.jpeg) center;
     background-size: 100%;
 }
 
 .y21 {
-    top : 400px;
+    top: 400px;
     background: url(/img/luffy-21y.jpg) center;
     background-size: 100%;
 }
 
 .wano {
-    top : 790px;
+    top: 790px;
     background: url(/img/luffy-wano.jpg) center;
     background-size: 100%;
 }
@@ -141,73 +142,84 @@ header {
 .left {
     left: calc(50% - 220px);
 }
+
 .right {
-    left : calc(50% + 220px);
+    left: calc(50% + 220px);
 }
 
 .b1 {
     top: 60px;
 }
+
 .b2 {
     top: 200px;
 }
+
 .b3 {
     top: 450px;
 }
+
 .b4 {
     top: 590px;
 }
+
 .b5 {
     top: 840px;
 }
 
 .left-point {
-	width: 0;
-	height: 0;
-	border-left: 5vh solid transparent;
-	border-right: 4vh solid transparent;
-	border-top: 6vh solid var(--light);
-	position: absolute;
-	top: 5%;
-	right: -5%;
-	transform: rotate(120deg);
-}
-.right-point {
-	width: 0;
-	height: 0;
-	border-left: 4vh solid transparent;
-	border-right: 5vh solid transparent;
-	border-top: 6vh solid var(--light);
-	position: absolute;
-	top: 5%;
-	left: -5%;
-	transform: rotate(10deg);
+    width: 0;
+    height: 0;
+    border-left: 5vh solid transparent;
+    border-right: 4vh solid transparent;
+    border-top: 6vh solid var(--light);
+    position: absolute;
+    top: 5%;
+    right: -5%;
+    transform: rotate(120deg);
 }
 
-.resumeTitle{
+.right-point {
+    width: 0;
+    height: 0;
+    border-left: 4vh solid transparent;
+    border-right: 5vh solid transparent;
+    border-top: 6vh solid var(--light);
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    transform: rotate(10deg);
+}
+
+.resumeTitle {
     grid-column: span 3;
     grid-row: 1 / 2;
     text-align: center;
 }
+
 .resume {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows:50px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
 }
-.resumeBoxes{
+
+.resumeBoxes {
     display: grid;
     grid-column: 2 / 3;
 }
+
 .combatcompetence {
     display: grid;
     grid-row: 2 / 3;
 }
+
 .caracteristique {
     display: grid;
-    grid-column:3 / 4 ;
+    grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
-.footerContainer{
+
+.footerContainer {
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -218,52 +230,98 @@ header {
     height: 50vh;
 
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    color: var(--light-primary);
+    height: 60vh;
+    justify-content: center;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: var(--text-size);
+    margin-top: var(--spacing3);
+}
+
 footer a {
     color: var(--light-primary);
     text-decoration: none;
-
 }
 
-.socialMedia{
+.socialMedia {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 50vh;
+    width: 250px;
+    align-items: center;
+
+
 }
 
-form{
+.escargo {
+    width: 250px;
+    height: 350px;
+}
+
+
+form {
     display: flex;
     flex-direction: column;
-    height: 30vh;
-    justify-content: space-between;
-}
-
-.phone{
-    background: url(img/escargophone-removebg-preview\(2\).png);
-    z-index: 5;
-    width: 100px;
-    height: 150px;
+    justify-self: center;
+    align-self: center;
 
 }
 
-
-/*
-css pour les animations
-
-
-.reveal{
-    position: relative;
-    transform: translateX(600px);
-    opacity: 0;
-    transition: 1s all ease;
+form label {
+    margin-top: var(--spacing3);
+    margin-bottom: var(--spacing);
 }
 
-.reveal.active{
-    transform: translateX(0);
-    opacity: 1;
-    left: 29%;
-  }
-*/
+form input {
+    font-size: var(--text-size);
+
+}
+
+button {
+    width: fit-content;
+    font-size: var(--text-size);
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: var(--spacing2);
+    font-family: var(--title-font);
+
+}
+
+form textarea {
+    font-size: var(--text-size);
+}
+
+form ul {
+    color: red;
+    list-style: inside;
+}
+
+form li {
+    margin-top: var(--spacing);
+
+}
+
+form p {
+    color: green;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+
+button:active {
+    filter: brightness(80%);
+}
 
 @media screen and (max-width: 736px) {
     .nav-links {
@@ -302,12 +360,15 @@ css pour les animations
         max-width: 60vw;
         min-height: 50px;
     }
+
     .left {
-        left : 60vw;
+        left: 60vw;
     }
-    .right{
-        left : 60vw;
+
+    .right {
+        left: 60vw;
     }
+
     .left-point {
         width: 0;
         height: 0;
@@ -319,7 +380,30 @@ css pour les animations
         left: -5%;
         transform: rotate(10deg);
     }
+
     .right-point {
         display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .escargo {
+        display: none;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+    }
+
+    form {
+        width: 75%;
+    }
+
+    footer {
+        width: 100%;
     }
 }
