@@ -46,17 +46,19 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Noto+Serif+JP:wght@700&display=swap');
 
 :root {
 	--primary:#18417E;
 	--light-primary:#D4DEFF;
-	--secondary:#fad220;
+	--secondary:#f09b11;
 	--light-secondary:#FAF1A1;
 	--dark:#020328;
 	--light: #e9e7e7;
-	--intermediate:#611515;
+	--intermediate:#970e0e;
 
-	--title-font:'onePieceFont';
+	--title-font:'Mali', cursive;
+	--title-jap:'Noto Serif JP', serif;; 
 	--title-size: 1.5rem;
 	--text-font: 'Caveat Brush', cursive;
 	--text-size: 1.3rem;

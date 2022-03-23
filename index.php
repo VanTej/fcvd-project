@@ -42,7 +42,8 @@
     <header>
         <div class="title">
             <h1>Monkey D. Luffy</h1>
-            <h2>Le roi des pirates ce sera moi !</h2>
+            <h1 class="jap">モンキー・D・ルフィ</h1>
+            <!-- <h2>Le roi des pirates ce sera moi !</h2> -->
         </div>
     </header>
 
