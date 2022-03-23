@@ -258,69 +258,64 @@ header {
 }
 
 .recommandations {
-
-    margin:0;
-    padding:0;
-    
+  margin: 0;
+  padding: 0;
 }
 
 .boxRecommandations {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-secondary);
-    height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-secondary);
+  min-height: 50vh;
+  gap: var(--spacing2);
 }
 .boxPersonnages {
-    display: flex;
-    align-items: center;
-    background-color: var(--primary) ;
-    height: 80%;
-    width: 50%;
-    min-width: 400px;
-    
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  height: 80%;
+  min-height: 300px;
+  width: 40%;
+  min-width: 400px;
+  margin-block: var(--spacing2);
 }
 
 .img-Perso {
-    height: 80%;
-    width: 50%;
-    background-color: blueviolet;
-    margin-inline: var(--spacing2);
-
+  height: 80%;
+  width: 50%;
+  margin-inline: var(--spacing2);
 }
-
 
 .recommandation {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-inline-end: var(--spacing2);
-    color: var(--light);
-    height: 80%;
-    width: 50%;
-    
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-inline-end: var(--spacing2);
+  color: var(--light);
+  height: 80%;
+  width: 50%;
 }
-.recommandation h1{
-    text-align: center;
-    font-size: 2rem;
-    
-
+.recommandation h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-inline: var(--spacing); 
+}
+.recommandation p {
+  margin-inline: var(--spacing);
 }
 
-
-.footerContainer{
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--primary);
-    color: var(--light-primary);
-    height: 50vh;
-
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--light-primary);
+  height: 50vh;
 }
 footer a {
   color: var(--light-primary);

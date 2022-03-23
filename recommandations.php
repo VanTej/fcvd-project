@@ -1,7 +1,7 @@
 <?php
 
 $recommandations = [
-    ['img-Perso' => 'url',
+    ['img-Perso' => '/img/luffy-17y.jpeg',
     'name' => 'nom du perso',
     'recommandation' => 'ce qu\'il a dit',
 ],
@@ -18,5 +18,3 @@ $recommandations = [
     'recommandation' => 'ce qu\'il a dit',
 ],
 ];
-
-var_dump($recommandations);
