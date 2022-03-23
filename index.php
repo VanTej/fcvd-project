@@ -1,6 +1,61 @@
 <?php require('recommandations.php');
 ?>
 
+<?php
+
+$errors = [];
+$validCkeck = 0;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $contact = array_map('trim', $_POST);
+
+    if (empty($contact['name'])) {
+        $errors[] = 'Le prénom est obligatoire';
+    } else {
+        $validCkeck++;
+    }
+
+    $firstnameMaxLength = 70;
+    if (strlen($contact['name']) > $firstnameMaxLength) {
+        $errors[] = 'Le prénom doit faire moins de ' . $firstnameMaxLength . ' caractères';
+    } else {
+        $validCkeck++;
+    }
+
+    if (empty($contact['email'])) {
+        $errors[] = 'L\'email est obligatoire';
+    } else {
+        $validCkeck++;
+    }
+
+    $emailMaxLength = 255;
+    if (strlen($contact['email']) > $emailMaxLength) {
+        $errors[] = 'Le mail doit faire moins de ' . $emailMaxLength . ' caractères';
+    } else {
+        $validCkeck++;
+    }
+
+    if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Mauvais format pour l\'email ' . htmlentities($contact['email']);
+    } else {
+        $validCkeck++;
+    }
+
+    if (empty($contact['message'])) {
+        $errors[] = 'Le message est obligatoire';
+    } else {
+        $validCkeck++;
+    }
+}
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -204,7 +259,7 @@
 
                     </div>
 
-                    <div class="appetie">
+                    <div class="appétit">
                         <h2>Appétit :</h2>
                         <div class="svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="-1 0 18 16">
@@ -281,26 +336,34 @@
     </main>
 
     <footer>
+
+
+        <h2 class="footerContact" id="Contactus">Me contacter :</h2>
+
+
         <div class="footerContainer">
 
-            <h2 class="footer contact" id="Contactus">Contact Me :</h2>
-            <a class="phone" href=""></a>
-            <form action="" method="get" class="form-example">
-                <div class="form-example">
-                    <label for="name">Votre Nom: </label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <div class="form-example">
-                    <label for="email">Votre Mail: </label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div>
-                    <label for="message">Votre message: </label><br><br>
-                    <textarea rows="6" cols="50"></textarea>
-                </div>
-                <div class="form-example">
-                    <input type="submit" value="Envoyer !">
-                </div>
+            <img src="img/escargo/escargophone-removebg-preview.png" class = 'escargo' />
+            <form action="#Contactus" method="POST" class="contactForm" >
+                <?php if ($validCkeck > 5) { ?>
+                    <p> Message envoyé ! </p>
+                <?php } else { ?>
+
+                    <ul>
+                        <?php foreach ($errors as $error) : ?>
+                            <li><?= $error ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php } ?>
+                <label for="name">Votre Nom: </label>
+                <input type="text" name="name" id="name" placeholder='Monkey D. Luffy' required value="<?= $contact['name'] ?? '' ?>">
+
+                <label for="email">Votre Mail: </label>
+                <input type="email" name="email" id="email" placeholder='luffy@one-piece.com' required value="<?= $contact['email'] ?? '' ?>">
+
+                <label for="message">Votre message: </label>
+                <textarea rows="5" cols="40" id='message' name='message' ><?= $contact['message'] ?? '' ?></textarea>
+                <button>Envoyer</button>
             </form>
             <div class='socialMedia'>
                 <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
