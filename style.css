@@ -258,89 +258,69 @@ header {
 }
 
 .recommandations {
-  margin: 0;
-  padding: 0;
-  font-family: sans serif;
+
+    margin:0;
+    padding:0;
+    
 }
 
 .boxRecommandations {
-  display: flex;
-  justify-content: space-between;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-secondary);
+    height: 50vh;
+}
+.boxPersonnages {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary) ;
+    height: 80%;
+    width: 50%;
+    min-width: 400px;
+    
+
 }
 
-.img-Perso1 {
-  height: 200px;
-  width: 200px;
-  transition: transform 0.1s;
-  background: url("https://i.pinimg.com/originals/db/33/d6/db33d69765f0256a9116ffd6e830b84a.jpg");
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: img-Perso();
-  margin: auto;
+.img-Perso {
+    height: 80%;
+    width: 50%;
+    background-color: blueviolet;
+    margin-inline: var(--spacing2);
+
 }
 
-.img-Perso1:hover {
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+
+.recommandation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline-end: var(--spacing2);
+    color: var(--light);
+    height: 80%;
+    width: 50%;
+    
+
+}
+.recommandation h1{
+    text-align: center;
+    font-size: 2rem;
+    
+
 }
 
-.img-Perso2 {
-  height: 200px;
-  width: 200px;
-  transition: transform 0.1s;
-  background: url("https://i.skyrock.net/1821/88121821/pics/photo_88121821_6.jpg");
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: img-Perso();
-  margin: auto;
-}
 
-.img-Perso2:hover {
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--light-primary);
+    height: 50vh;
 
-.img-Perso3 {
-  height: 200px;
-  width: 200px;
-  transition: transform 0.1s;
-  background: url("https://images8.alphacoders.com/104/thumb-350-1045517.jpg");
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: img-Perso();
-  margin: auto;
-}
-
-.img-Perso3:hover {
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-.img-Perso4 {
-  height: 200px;
-  width: 200px;
-  transition: transform 0.1s;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_IKH_eWbngXssmSxteH3mIVoNDz8DmjliS9EGnHUQjEnIsUJ1Q7PlcqGSf6YVxepNyU&usqp=CAU");
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: img-Perso();
-  margin: auto;
-}
-
-.img-Perso4:hover {
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
-}
-
-.footerContainer {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--primary);
-  color: var(--light-primary);
-  height: 50vh;
 }
 footer a {
   color: var(--light-primary);
