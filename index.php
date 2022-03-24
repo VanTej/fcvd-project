@@ -111,34 +111,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="image-luffy y17"></div>
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="timeline-box left b1">
                     <div class="left-point"></div>
-                    <h3>Date - Lieu</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                    <h3>17 ans - East Blue</h3>
+                    <p>Première traversée en solitaire</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="timeline-box right b2">
                     <div class="right-point"></div>
-                    <h3>Date - Lieu</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                    <h3>17 ans - East Blue</h3>
+                    <p>Constitution de l'équipage au chapeau de paille</p>
                 </div>
                 <div class="image-luffy y21"></div>
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="timeline-box left b3">
                     <div class="left-point"></div>
-                    <h3>Date - Lieu</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                    <h3>19 ans - Marine Ford</h3>
+                    <p>Participation à la bataille de Marine Ford</p>
                 </div>
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="timeline-box right b4">
                     <div class="right-point"></div>
-                    <h3>Date - Lieu</h3>
+                    <h3>21 ans - Passage vers le Nouveau Monde</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
                 </div>
                 <div class="image-luffy wano"></div>
                 <div data-aos="zoom-in" data-aos-anchor-placement="top-center" class="timeline-box left b5">
                     <div class="left-point"></div>
-                    <h3>Date - Lieu</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem?</p>
+                    <h3>23 ans - Wano</h3>
+                    <p>Libération du Pays des Wa de l'emprise de Kaido</p>
                 </div>
             </div>
 
-            
+
             <section class="resume" id="Resume">
                 <h2 class=resumeTitle> Resume de mes compétences </h2>
                 <div id="caroussel">
@@ -342,9 +342,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         <div class="footerContainer">
-
-            <img src="img/escargo/escargophone-removebg-preview.png" class = 'escargo' />
-            <form action="#Contactus" method="POST" class="contactForm" >
+            <div class="escargo">
+                <audio src="/sound/dendenmushi.mp3" ></audio>
+                <img src="img/escargo/escargophone-removebg-preview.png" class='escargo' />
+            </div>
+            <form action="#Contactus" method="POST" class="contactForm">
                 <?php if ($validCkeck > 5) { ?>
                     <p> Message envoyé ! </p>
                 <?php } else { ?>
@@ -362,7 +364,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="email" name="email" id="email" placeholder='luffy@one-piece.com' required value="<?= $contact['email'] ?? '' ?>">
 
                 <label for="message">Votre message: </label>
-                <textarea rows="5" cols="40" id='message' name='message' ><?= $contact['message'] ?? '' ?></textarea>
+                <textarea rows="5" cols="40" id='message' name='message'><?= $contact['message'] ?? '' ?></textarea>
                 <button>Envoyer</button>
             </form>
             <div class='socialMedia'>

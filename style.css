@@ -1,4 +1,5 @@
 @import "variables.css";
+@import "vibration.css";
 
 @font-face {
   font-family: "onePieceFont";
@@ -426,22 +427,28 @@ footer a {
     height: 50vh;
     width: 250px;
     align-items: center;
-
-
 }
-
+audio {
+    display: none;
+}
+audio:hover {
+    display: block;
+}
 .escargo {
     width: 250px;
     height: 350px;
 }
 
+.escargo:hover {
+    -webkit-animation: vibrate-3 0.5s linear infinite both;
+            animation: vibrate-3 0.5s linear infinite both;
+}
 
 form {
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-self: center;
-
 }
 
 form label {
@@ -451,7 +458,6 @@ form label {
 
 form input {
     font-size: var(--text-size);
-
 }
 
 button {
@@ -462,7 +468,6 @@ button {
     padding: 4px;
     margin-top: var(--spacing2);
     font-family: var(--title-font);
-
 }
 
 form textarea {
@@ -476,7 +481,6 @@ form ul {
 
 form li {
     margin-top: var(--spacing);
-
 }
 
 form p {
