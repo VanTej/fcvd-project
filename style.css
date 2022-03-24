@@ -354,38 +354,46 @@ header {
 }
 .boxPersonnages {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--primary);
   height: 80%;
-  min-height: 300px;
-  width: 40%;
-  min-width: 400px;
-  margin-block: var(--spacing2);
+  min-height: 30%;
+  min-width: 40%;
 }
 
-.img-Perso {
+/*.img-Perso {
   height: 80%;
   width: 50%;
   margin-inline: var(--spacing2);
+}*/
+
+.imgRecom{
+    height: 20rem;
+    width: 12rem;
+
 }
 
 .recommandation {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-inline-end: var(--spacing2);
+  justify-content: space-between;
   color: var(--light);
   height: 80%;
-  width: 50%;
+  align-items: center;
+  justify-self: center;
 }
 .recommandation h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-inline: var(--spacing);
+  margin-bottom: var(--spacing3);
 }
 .recommandation p {
   margin-inline: var(--spacing);
+  margin-top: var(--spacing3);
+  font-size: 1.8rem;
+
 }
 
 .footerContainer {
