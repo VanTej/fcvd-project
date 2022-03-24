@@ -351,7 +351,6 @@ header {
   justify-content: center;
   background-color: var(--light-secondary);
   min-height: 50vh;
-  gap: var(--spacing2);
 }
 .boxPersonnages {
   display: flex;
@@ -359,20 +358,12 @@ header {
   align-items: center;
   background-color: var(--primary);
   height: 80%;
-  min-height: 30%;
-  min-width: 40%;
+  margin: var(--spacing2);
 }
-
-/*.img-Perso {
-  height: 80%;
-  width: 50%;
-  margin-inline: var(--spacing2);
-}*/
 
 .imgRecom{
     height: 20rem;
     width: 12rem;
-
 }
 
 .recommandation {
@@ -380,13 +371,14 @@ header {
   flex-direction: column;
   justify-content: space-between;
   color: var(--light);
-  height: 80%;
   align-items: center;
   justify-self: center;
+  margin: var(--spacing2);
+  width: 23vw;
 }
 .recommandation h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-inline: var(--spacing);
   margin-bottom: var(--spacing3);
 }
@@ -394,7 +386,6 @@ header {
   margin-inline: var(--spacing);
   margin-top: var(--spacing3);
   font-size: 1.8rem;
-
 }
 
 .footerContainer {
@@ -436,12 +427,7 @@ footer a {
     width: 250px;
     align-items: center;
 }
-audio {
-    display: none;
-}
-audio:hover {
-    display: block;
-}
+
 .escargo {
     width: 250px;
     height: 350px;

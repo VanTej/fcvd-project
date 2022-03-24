@@ -343,7 +343,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div class="footerContainer">
             <div class="escargo">
-                <audio src="/sound/dendenmushi.mp3" ></audio>
                 <img src="img/escargo/escargophone-removebg-preview.png" class='escargo' />
             </div>
             <form action="#Contactus" method="POST" class="contactForm">
