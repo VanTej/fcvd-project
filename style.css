@@ -41,9 +41,8 @@ nav {
 }
 
 nav img {
-  width: 4rem;
-  /* margin-inline-start: var(--spacing2); */
-  padding: var(--spacing2);
+  width: 2.5rem;
+  padding: var(--spacing);
 }
 
 nav ul {
@@ -52,7 +51,7 @@ nav ul {
   margin-inline: 1rem;
 }
 nav ul li {
-  font-size: clamp(15px, 2vw, 25px);
+  font-size: clamp(15px, 1.8vw, 25px);
 }
 
 nav ul li a {
@@ -139,14 +138,14 @@ header {
   padding-block: 5vh;
   background-color: var(--primary);
   opacity: 0.93;
-  color: var(--light-primary);
+  color: var(--secondary);
 }
 
 .timeline {
   width: 100%;
   height: 1100px;
   position: relative;
-  padding-block: 2vh;
+  padding-block-start: 2vh;
 }
 
 .line {
@@ -270,6 +269,7 @@ header {
   grid-column: span 3;
   grid-row: span 1 ;
   text-align: center;
+  color: var(--secondary);
   
 }
 
@@ -277,18 +277,15 @@ header {
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
   grid-template-rows: 100px 1fr;
+  padding-block-end: var(--spacing2);
+  background-color: var(--primary);
+  opacity: 0.93;
 }
 
 .resumeBoxes {
   display: grid;
   grid-column: 2 / 3;
 }
-
-
-
-    
-
-  
 
 #caroussel {
   display: flex;
@@ -334,17 +331,23 @@ header {
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  
+}
+
+.resume h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  height: 50%;
+  color: var(--light);
 }
 .svg {
   display: flex;
   justify-content: center;
-  background-color: var(--primary);
   stroke-width: 1;
   color: var(--secondary);
   stroke: var(--intermediate);
   stroke-dasharray: 60;
   stroke-dashoffset: 60;
+  z-index: 5;
 }
 .svg {
   animation: animate-svg 2s linear forwards;
@@ -372,49 +375,52 @@ header {
   margin: 0;
   padding: 0;
 }
-
+.recoTitle {
+  margin-block-start: var(--spacing2);
+  color: var(--secondary);
+}
 .boxRecommandations {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
   min-height: 50vh;
 }
 .boxPersonnages {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--dark);
+  background-color: var(--primary);
   height: 80%;
   margin: var(--spacing2);
 }
 
 .imgRecom {
-  height: 20rem;
-  width: 12rem;
+  height: 25rem;
+  width: 16rem;
 }
 
 .recommandation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--light-secondary);
+  color: var(--light-primary);
   align-items: center;
   justify-self: center;
   margin: var(--spacing2);
-  width: 23vw;
+  width: 20rem;
 }
 .recommandation h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-inline: var(--spacing);
   margin-bottom: var(--spacing3);
 }
 .recommandation p {
   margin-inline: var(--spacing);
   margin-top: var(--spacing3);
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .footerContainer {
@@ -425,7 +431,7 @@ header {
   align-items: center;
   background-color: var(--primary);
   color: var(--light-primary);
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 footer {
@@ -433,14 +439,16 @@ footer {
   flex-direction: column;
   background-color: var(--primary);
   color: var(--light-primary);
-  height: 60vh;
+  /* height: 60vh; */
   justify-content: center;
 }
 
 footer h2 {
   text-align: center;
-  font-size: var(--text-size);
+  font-size: 1.5rem;
   margin-top: var(--spacing3);
+  color: var(--secondary);
+  font-weight: 600;
 }
 
 footer a {
@@ -507,7 +515,7 @@ form li {
 }
 
 form p {
-  color: green;
+  color: rgb(65, 245, 65);
 }
 
 button:hover {
@@ -599,9 +607,8 @@ button:active {
 
   footer {
     width: 100%;
+    height: 70vh;
   }
-}
-@media screen and (max-width: 600px) {
 
   #caroussel {
     display: none;
@@ -619,5 +626,9 @@ button:active {
   }
   .caracteristique{
     width: 50%;
+  }
+
+  .combatcompetence h2, .caracteristique h2{
+    font-size: 1.5rem;
   }
 }
