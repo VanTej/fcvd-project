@@ -268,26 +268,39 @@ header {
 
 .resumeTitle {
   grid-column: span 3;
-  grid-row: 1 / 2;
+  grid-row: span 1 ;
   text-align: center;
+  
 }
+
 .resume {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 1fr;
-  background-color: var(--light-primary);
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 100px 1fr;
 }
+
 .resumeBoxes {
   display: grid;
   grid-column: 2 / 3;
 }
+
+
+
+    
+
+  
+
 #caroussel {
+  display: flex;
+  align-items: center;
   width: 400px;
   overflow: auto;
-  border: 2px solid var(--dark);
+  background-color: var(--primary);
+
 }
 .caroussel {
   display: flex;
+  justify-content: auto;
   animation-duration: 20s;
   animation-name: mesImages;
   animation-iteration-count: infinite;
@@ -314,16 +327,19 @@ header {
 .combatcompetence {
   display: grid;
   grid-row: 2 / 3;
-  justify-content: center;
+  
 }
 
 .caracteristique {
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  justify-content: center;
+  
 }
 .svg {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
   stroke-width: 1;
   color: var(--secondary);
   stroke: var(--intermediate);
@@ -583,5 +599,25 @@ button:active {
 
   footer {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  #caroussel {
+    display: none;
+  }
+  .resume{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .resumeTitle {
+    width: 100%;
+  }
+  .combatcompetence {
+    width: 50%;
+  }
+  .caracteristique{
+    width: 50%;
   }
 }
