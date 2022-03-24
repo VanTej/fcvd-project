@@ -320,7 +320,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="boxRecommandations">
                     <?php foreach ($recommandations as $recommandation) : ?>
                         <div class="boxPersonnages">
-                            <img src="<?= $recommandation['img-Perso'] ?>">
+                            <img class ='imgRecom' src="<?= $recommandation['img-Perso'] ?>">
                             <div class="recommandation">
                                 <h1><?= $recommandation['name'] ?></h1>
                                 <p><?= $recommandation['recommandation'] ?></p>
