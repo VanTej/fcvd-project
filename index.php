@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <nav>
         <a href="#Accueil"><img src="img/logoLuffy.png" alt="Luffy Logo" /> </a>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#">Accueil</a></li>
             <li><a href="#Experience">Expérience</a></li>
             <li><a href="#Resume">Résumé</a></li>
             <li><a href="#Recommandations">Recommandations</a></li>
@@ -90,7 +90,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </svg>
             </a>
         </div>
-        <a class="close" href="#"></a>
 
     </nav>
 
