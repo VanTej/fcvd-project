@@ -138,8 +138,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
 
+            <h2 class="resumeTitle" id="resumeTitle"> RESUME DE MES APTITUDES </h2>
             <section class="resume" id="Resume">
-                <h2 class=resumeTitle> RESUME DE MES APTITUDES </h2>
                     <div id="caroussel">
                         <div class="caroussel">
                             <img src="Avis_recherche/300000000.jpg" alt="avis de recherche 300000000 berrys">

@@ -131,7 +131,6 @@ header {
   z-index: 1;
 }
 
-
 .xp h2 {
   text-align: center;
   font-size: clamp(30px, 2.5vw, 40px);
@@ -139,6 +138,12 @@ header {
   background-color: var(--primary);
   opacity: 0.93;
   color: var(--secondary);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 20px;
+  padding-inline: 2rem;
+  border: var(--secondary) solid 5px;
+  margin-block-start: var(--spacing2);
 }
 
 .timeline {
@@ -267,33 +272,39 @@ header {
 
 .resumeTitle {
   grid-column: span 3;
-  grid-row: span 1 ;
+  grid-row: span 1;
   text-align: center;
   color: var(--secondary);
-  
+  margin-block-end: var(--spacing2);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 20px;
+  padding-inline: 2rem;
+  border: var(--secondary) solid 5px;
 }
+#resumeTitle {
+  margin-block-start: 0;
 
+}
+  
 .resume {
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 1fr;
   padding-block-end: var(--spacing2);
   background-color: var(--primary);
   opacity: 0.93;
 }
-
-.resumeBoxes {
-  display: grid;
-  grid-column: 2 / 3;
+.resume h2{
+  border: none;
 }
-
 #caroussel {
   display: flex;
   align-items: center;
   width: 400px;
   overflow: auto;
   background-color: var(--primary);
-
+  grid-column-start: 2;
 }
 .caroussel {
   display: flex;
@@ -323,14 +334,12 @@ header {
 
 .combatcompetence {
   display: grid;
-  grid-row: 2 / 3;
-  
 }
 
 .caracteristique {
   display: grid;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .resume h3 {
@@ -588,7 +597,9 @@ button:active {
     align-items: flex-end;
     justify-content: flex-start;
   }
-  
+  .recommandation {
+    width: 30%;
+  }
   .footerContainer {
     flex-direction: column;
   }
@@ -609,11 +620,14 @@ button:active {
     width: 100%;
     height: 70vh;
   }
-
+  .socialMedia {
+    height: auto;
+    margin-block-start: var(--spacing4);
+  }
   #caroussel {
     display: none;
   }
-  .resume{
+  .resume {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -621,14 +635,15 @@ button:active {
   .resumeTitle {
     width: 100%;
   }
-  .combatcompetence {
-    width: 50%;
+  /* .combatcompetence {
+    width: 40%;
   }
-  .caracteristique{
-    width: 50%;
-  }
+  .caracteristique {
+    width: 40%;
+  } */
 
-  .combatcompetence h2, .caracteristique h2{
+  .combatcompetence h2,
+  .caracteristique h2 {
     font-size: 1.5rem;
   }
 }
