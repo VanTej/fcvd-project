@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </video>
 
     <nav>
-        <a href="#Accueil"><img src="img/logoLuffy.png" alt="Luffy Logo" /> </a>
+        <a href="#"><img src="img/logoLuffy.png" alt="Luffy Logo" /> </a>
         <ul class="nav-links" id="nav-links">
             <li><a href="#">Accueil</a></li>
             <li><a href="#Experience">Expérience</a></li>
